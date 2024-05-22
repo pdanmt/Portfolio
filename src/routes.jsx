@@ -12,10 +12,10 @@ export function AppRoutes() {
             <Routes>
                 <Route path="/" element={<PageBase />}>
                     <Route index exact element={<Home />} />
-                    <Route path="/about" exact element={<About />} />
-                    <Route path="/projects" exact element={<Projects />} />
-                    <Route path="/contacts" exact element={<Contact />} />
-                    <Route path="*" exact element={<NotFound />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contacts" element={<Contact />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>
