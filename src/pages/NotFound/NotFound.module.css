@@ -1,0 +1,13 @@
+.mainNotFound {
+    h1 {
+        font-size: 220pt;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainNotFound {
+        h1 {
+            font-size: 130pt;
+        }
+    }
+}
