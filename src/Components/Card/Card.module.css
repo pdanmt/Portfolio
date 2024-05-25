@@ -16,10 +16,16 @@
         background-color: aliceblue;
         display: flex;
         align-items: center;
-        
+        text-decoration: none;
+
         h3 {
             color: #0F3460;
             width: 100%;
+            transition: 0.4s;
+
+            &:hover {
+                filter: brightness(1.40);
+            }
         }
     }
 
@@ -38,7 +44,7 @@
         .icons {
             font-size: 25px;
         }
-    
+
         a {
             padding: 5px 10px;
             background-color: #0F3460;
@@ -47,7 +53,7 @@
             border: none;
             cursor: pointer;
             display: flex;
-            align-items: center;            
+            align-items: center;
             transition: 0.4s;
 
             &:hover {

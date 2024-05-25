@@ -10,7 +10,7 @@ export function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<PageBase />}>
+                <Route path="/" exact element={<PageBase />}>
                     <Route index exact element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
