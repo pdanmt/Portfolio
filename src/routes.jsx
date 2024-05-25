@@ -4,20 +4,27 @@ import { About } from "./pages/About/AboutIndex"
 import { Contact } from "./pages/Contacts/contactIndex"
 import { Projects } from "./pages/Projects/projectsIndex"
 import { NotFound } from "./pages/NotFound/notFoundIndex"
-import { PageBase } from "./pages/PageBase/pageBaseIndex"
+import { Header } from "./Components/Header/headerIndex"
+import { Container } from "./Components/Container/containerIndex"
+import { Footer } from "./Components/Footer/footerIndex"
+// import { PageBase } from "./pages/PageBase/pageBaseIndex"
 
 export function AppRoutes() {
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" exact element={<PageBase />}>
-                    <Route index exact element={<Home />} />
+            <Header />
+            <Container>
+                <Routes>
+                    {/* <Route path="/" exact element={<PageBase />}> */}
+                    <Route path="/" exact element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contacts" element={<Contact />} />
                     <Route path="*" element={<NotFound />} />
-                </Route>
-            </Routes>
+                    {/* </Route> */}
+                </Routes>
+            </Container>
+            <Footer />
         </BrowserRouter>
     )
 }
