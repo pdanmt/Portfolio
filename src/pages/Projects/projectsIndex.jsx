@@ -15,21 +15,42 @@ export function Projects() {
         searchReposit()
     }, [])
 
-    return (
-        <Container>
-            <h2 className={styles.top}>Projetos:</h2>
-            {
-                repository.length == 0 ?
-                    <p>Carregando repositórios...</p> :
-                    <div className={styles.divProjects}>
-                        {repository.map((rep) =>
-                            <Card title={rep.name}
+    function CardsReturn() {
+        if (repository.length === 0) {
+            return (
+                <p>Carregando repositórios</p>
+            )
+        } else {
+            return (
+                <div className={styles.divProjects}>
+                    {repository.map((rep) => {
+                        if (rep.homepage === null) {
+                            return (
+                                <Card title={rep.name}
+                                description={rep.description}
+                                url={rep.html_url}
+                                languages={rep.languages_url}
+                                key={rep.id} />
+                            )
+                        } else {
+                            return (
+                                <Card title={rep.name}
                                 description={rep.description}
                                 url={rep.homepage}
                                 languages={rep.languages_url}
-                                key={rep.id} />)}
-                    </div>
-            }
+                                key={rep.id} />
+                            )
+                        }
+                    })}
+                </div>
+            )
+        }
+    }
+
+    return (
+        <Container>
+            <h2 className={styles.top}>Projetos:</h2>
+            {CardsReturn()}
         </Container>
     )
 }

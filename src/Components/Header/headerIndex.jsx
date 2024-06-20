@@ -17,7 +17,7 @@ export function Header() {
                 <Link to={"/contacts"}>Contatos</Link>
             </nav>
             <div className={styles.menuBtn} >
-                <span onClick={toggleMenu} class="material-symbols-outlined">menu</span>
+                <span onClick={toggleMenu} className="material-symbols-outlined">menu</span>
             </div>
         </header>
     )
