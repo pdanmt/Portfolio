@@ -10,7 +10,7 @@ export function Contact() {
             <h2>Contatos:</h2>
             <div className={styles.divFlex}>
                 <a href="mailto:pedddann@gmail.com" target="_blank"><GoMail /></a>
-                <a href="https://github.com/PedroMatos12" target="_blank"><RiGithubFill /></a>
+                <a href="https://github.com/pdanmt" target="_blank"><RiGithubFill /></a>
             </div>
         </main>
     )

@@ -8,7 +8,7 @@ export function Projects() {
     const [repository, setRepository] = useState([])
     useEffect(() => {
         const searchReposit = async () => {
-            const response = await fetch('https://api.github.com/users/PedroMatos12/repos')
+            const response = await fetch('https://api.github.com/users/pdanmt/repos')
             const data = await response.json()
             setRepository(data)
         }
