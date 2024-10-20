@@ -34,15 +34,22 @@
 
     .sectionTechs {
         margin-top: 6vh;
-
+        
         h2 {
             margin-bottom: 30px;
         }
-
-        span {
-            margin: 50px;
-            font-size: 90px;
-            color: #092241;
+        
+        div {
+            display: flex;
+            align-items: center;
+            
+            span {
+                margin: 0 50px;
+                font-size: 90px;
+                color: #092241;
+                font-size: 4rem;
+                line-height: 0;
+            }
         }
     }
 }
