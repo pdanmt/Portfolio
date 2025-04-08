@@ -70,9 +70,12 @@
 
         .sectionTechs {  
             margin: 10px;
-            span {
-                margin: 10px;
-                font-size: 50px;
+            div {
+                gap: 2rem;
+                span {
+                    margin: 10px;
+                    font-size: 50px;
+                }
             }
         }
     }
