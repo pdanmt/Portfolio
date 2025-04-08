@@ -25,7 +25,7 @@ export function About() {
                 <h2>Techs</h2>
                 <div>
                     <span><IoLogoJavascript /></span>
-                    <span><SiTypescript size='3.65rem' /></span>
+                    <span><SiTypescript /></span>
                     <span><IoLogoHtml5 /></span>
                     <span><IoLogoCss3 /></span>
                     <span><IoLogoReact /></span>
