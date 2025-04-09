@@ -72,6 +72,7 @@
             margin-top: 20px;
         }
 
+<<<<<<< HEAD
         .sectionTechs {
             margin: 10px;
 
@@ -85,6 +86,15 @@
 
                 .typescript {
                     font-size: 3.625rem;
+=======
+        .sectionTechs {  
+            margin: 10px;
+            div {
+                gap: 2rem;
+                span {
+                    margin: 10px;
+                    font-size: 50px;
+>>>>>>> c2ea37fd1ee1c1873fd76959f1ae998738f79126
                 }
             }
         }
