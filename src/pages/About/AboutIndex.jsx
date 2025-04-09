@@ -25,7 +25,6 @@ export function About() {
             <section className={styles.sectionTechs}>
                 <h2>Techs</h2>
                 <div>
-<<<<<<< HEAD
                     <span title="Javascript"><IoLogoJavascript /></span>
                     <span title="Typescript" className={styles.typescript}>
                         <BiLogoTypescript />
@@ -34,13 +33,6 @@ export function About() {
                     <span title="CSS3"><IoLogoCss3 /></span>
                     <span title="React"><IoLogoReact /></span>
                     <span title="Next.JS"><RiNextjsFill /></span>
-=======
-                    <span><IoLogoJavascript /></span>
-                    <span><SiTypescript /></span>
-                    <span><IoLogoHtml5 /></span>
-                    <span><IoLogoCss3 /></span>
-                    <span><IoLogoReact /></span>
->>>>>>> c2ea37fd1ee1c1873fd76959f1ae998738f79126
                 </div>
             </section>
         </main>
