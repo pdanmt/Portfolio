@@ -1,11 +1,12 @@
 import styles from "./About.module.css"
 import img from "../../images/me-image.jpg"
 
-import { IoLogoJavascript } from "react-icons/io5";
-import { IoLogoHtml5 } from "react-icons/io";
-import { IoLogoCss3 } from "react-icons/io";
-import { IoLogoReact } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5"
+import { IoLogoHtml5 } from "react-icons/io"
+import { IoLogoCss3 } from "react-icons/io"
+import { IoLogoReact } from "react-icons/io5"
+import { RiNextjsFill } from "react-icons/ri"
+import { BiLogoTypescript } from "react-icons/bi"
 
 export function About() {
     return (
@@ -24,11 +25,14 @@ export function About() {
             <section className={styles.sectionTechs}>
                 <h2>Techs</h2>
                 <div>
-                    <span><IoLogoJavascript /></span>
-                    <span><SiTypescript size='3.65rem' /></span>
-                    <span><IoLogoHtml5 /></span>
-                    <span><IoLogoCss3 /></span>
-                    <span><IoLogoReact /></span>
+                    <span title="Javascript"><IoLogoJavascript /></span>
+                    <span title="Typescript" className={styles.typescript}>
+                        <BiLogoTypescript />
+                    </span>
+                    <span title="HTML5"><IoLogoHtml5 /></span>
+                    <span title="CSS3"><IoLogoCss3 /></span>
+                    <span title="React"><IoLogoReact /></span>
+                    <span title="Next.JS"><RiNextjsFill /></span>
                 </div>
             </section>
         </main>

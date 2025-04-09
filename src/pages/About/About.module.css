@@ -34,21 +34,27 @@
 
     .sectionTechs {
         margin-top: 6vh;
-        
+
         h2 {
             margin-bottom: 30px;
         }
-        
+
         div {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
-            
+
             span {
                 margin: 0 50px;
-                font-size: 90px;
                 color: #092241;
                 font-size: 4rem;
                 line-height: 0;
+
+            }
+
+            .typescript {
+                font-size: 4.5rem;
             }
         }
     }
@@ -66,11 +72,20 @@
             margin-top: 20px;
         }
 
-        .sectionTechs {  
-            margin: 10px;         
-            span {
-                margin: 10px;
-                font-size: 50px;
+        .sectionTechs {
+            margin: 10px;
+
+            div {
+                gap: 2rem;
+
+                span {
+                    margin: 10px;
+                    font-size: 3.125rem;
+                }
+
+                .typescript {
+                    font-size: 3.625rem;
+                }
             }
         }
     }
