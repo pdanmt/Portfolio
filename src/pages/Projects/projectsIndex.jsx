@@ -6,19 +6,29 @@ import { Container } from "../../Components/Container/containerIndex"
 
 export function Projects() {
     const [repository, setRepository] = useState([])
+
     useEffect(() => {
         const searchReposit = async () => {
-            const response = await fetch('https://api.github.com/users/pdanmt/repos')
-            const data = await response.json()
-            setRepository(data)
+            try {
+                const response = await fetch('https://api.github.com/users/pdanmt/repos')
+                const data = await response.json()
+                if (response.status === 200) {
+                    setRepository(data)
+                } else {
+                    throw new Error()
+                }
+            } catch (error) {
+                console.error(`Erro ao buscar repositórios: ${error}`)
+            }
         }
+
         searchReposit()
     }, [])
 
     function CardsReturn() {
         if (repository.length === 0) {
             return (
-                <p>Carregando repositórios</p>
+                <p>Carregando repositórios...</p>
             )
         } else {
             return (
